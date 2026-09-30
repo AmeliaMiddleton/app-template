@@ -1,0 +1,23 @@
+:host {
+  display: block;
+}
+
+.demo {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 3rem var(--gutter) 5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.lede {
+  margin: 1.25rem 0 0;
+  max-width: 60ch;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-text-soft);
+}

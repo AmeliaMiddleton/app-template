@@ -1,0 +1,58 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  font-weight: 600;
+  border-radius: var(--radius);
+  text-decoration: none;
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 1rem var(--gutter);
+}
+
+.app-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+main {
+  flex: 1;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.site-footer {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 2rem var(--gutter);
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  border-top: 1px solid var(--color-border);
+}

@@ -1,0 +1,14 @@
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <span class="app-name">{{ info.name }}</span>
+  <app-request-cta />
+</header>
+
+<main id="main" tabindex="-1">
+  <router-outlet />
+</main>
+
+<footer class="site-footer">
+  <p>A free demo by <a [href]="info.authorUrl">Amelia Cox</a></p>
+</footer>
