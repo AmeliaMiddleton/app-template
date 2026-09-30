@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Change the title and description for each app. -->
+    <title>App Template</title>
+    <meta name="description" content="A free, accessible demo app by Amelia Cox." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <span class="app-name" data-app-name>App Template</span>
+      <button type="button" class="button button-primary" id="request-open">
+        Customize this for your school
+      </button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- Replace this section with the demo. -->
+      <section class="demo" aria-labelledby="demo-heading">
+        <h1 id="demo-heading" data-app-name>App Template</h1>
+        <p class="lede">Replace this section with the demo. Everything around it is already set up.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>A free demo by <a href="https://ameliacox-me.pages.dev" data-author-link>Amelia Cox</a></p>
+    </footer>
+
+    <dialog
+      id="request-dialog"
+      class="request-dialog"
+      aria-labelledby="request-title"
+      aria-describedby="request-description"
+    >
+      <h2 id="request-title">
+        Want <span data-app-name>App Template</span> for your classroom, school, or district?
+      </h2>
+      <p id="request-description">
+        This is a free demo. It can be customized for a single teacher or built out for a whole
+        school district. Tell me who it's for and I'll follow up.
+      </p>
+
+      <fieldset>
+        <legend>Who is it for? <span class="optional">(optional)</span></legend>
+        <label class="choice"><input type="radio" name="request-audience" value="teacher" /> A teacher or classroom</label>
+        <label class="choice"><input type="radio" name="request-audience" value="school" /> A school</label>
+        <label class="choice"><input type="radio" name="request-audience" value="district" /> A school district</label>
+        <label class="choice"><input type="radio" name="request-audience" value="other" /> Something else</label>
+      </fieldset>
+
+      <div class="actions">
+        <a class="button button-primary" id="request-bid" href="https://geekamu.com/request?type=bid">Request a bid</a>
+        <a class="button button-secondary" id="request-info" href="https://geekamu.com/request?type=info">
+          Request more information
+        </a>
+      </div>
+
+      <button type="button" class="link-button" id="request-close">Not now, keep exploring</button>
+    </dialog>
+  </body>
+</html>
